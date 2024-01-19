@@ -68,12 +68,11 @@ section {
     grid-template-rows:150px auto;
 }
 
-.home-title {
-    font-family: var(--paragraph-font);
-    font-size: 2em;
-    margin-top: 10px;
-    color: whitesmoke;
+.card{
+    display: grid;
+    grid-template-columns: 150px auto;
 }
+
 
 p {
     font-family: var(--paragraph-font);
@@ -89,16 +88,17 @@ main section {
 footer{
     display: grid;
     padding: 25px 50px;
-    background-color:#6485cd;
+    background-color: blue;
     color:white;
-    text-decoration: none;
+    text-decoration:wheat;
     margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
+    grid-template-rows: auto;
     align-items: center;
 }
 footer p {
     text-align: left;
+    color: black;
+    text-emphasis: none;
     font-size: 1.2em;
     padding: 0%;
 }
