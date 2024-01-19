@@ -45,7 +45,7 @@ header{
 
 
 nav {
-    display:c;
+    display: block;
     justify-content: space-around;
 }
 nav a {
