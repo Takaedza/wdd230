@@ -1,3 +1,3 @@
 // copy right year
 document.querySelector('#year').textContent = new Date().getFullYear();
-document.lastModified('#lastModified');
+document.getElementById('lastModified').innerHTML =new Date(document.lastModified);
