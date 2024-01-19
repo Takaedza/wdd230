@@ -43,10 +43,11 @@ header{
     grid-template-columns: 150px auto;
 }
 
-
 nav {
-    display: block;
+    display: grid;
     justify-content: space-around;
+    background-color: black;
+    grid-template-rows:150px auto;
 }
 nav a {
     min-width: 120px;
@@ -60,6 +61,11 @@ nav a:hover{
     color:#519080;
     text-decoration: none;
     font-family:var(--paragh-font--);
+}
+
+section {
+    display:grid;
+    grid-template-rows:150px auto;
 }
 
 .home-title {
