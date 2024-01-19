@@ -37,27 +37,15 @@ header{
     display: grid;
     padding: 1em;
     text-align: center;
-    background-color: #519080;
+    background-color: blue;
     color:white;
     font-family:var(--heading-font);
     grid-template-columns: 150px auto;
 }
 
 
-#pic_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-
-.picture{
-    padding-top: 5px;
-    width: 100px;
-}
-
-
 nav {
-    display: flex;
+    display:c;
     justify-content: space-around;
 }
 nav a {
