@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@1,300&display=swap');
+:root{--heading-font: Lobster;
+    --paragraph-font: Ubuntu, Helvetica, sans-serif;
+}
+            
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+
+  h2, h3,h4 {
+    margin: 0;
+  }
+
+body{
+    display: grid;
+    font-family: var(--paragraph-font);
+    background-color:#dee5f1;
+    color:black;
+    max-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+#background {
+    display: none;
+    height: fit-content;
+    background-color:#396E94;
+    color:black;
+    max-width: 960px;
+    grid-column: 1/6;
+    grid-row: 4/8;
+    z-index: 1;
+}
+header{
+    display: grid;
+    padding: 1em;
+    text-align: center;
+    background-color: blue;
+    color:white;
+    font-family:var(--heading-font);
+    grid-template-columns: 150px auto;
+    height: inherit;
+}
+
+nav {
+    display: grid;
+    justify-content: space-around;
+    background-color: black;
+    grid-column: 1 / span 3;
+    top: auto;
+    height: 200px;
+}
+nav a {
+    min-width: 120px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #F6BEB1;
+    color:#519080;
+    text-decoration: none;
+    font-family:var(--paragh-font--);
+}
+
+h2 {
+    display: grid;
+    grid-column: 1 / span 3;
+    height: 80px;
+}
+
+main {
+    display: grid;
+}
+section {
+    grid-template-columns:300px, 300px, 300px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.card1 {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    max-width: 300px;
+}
+
+.card2 {
+    grid-column: 2 / span 1;
+    grid-row: auto;
+    max-width: 300px;
+}
+
+.card3 {
+    grid-column: 3 / span 1;
+    grid-row: auto;
+    max-width: 300px;
+}
+
+.hierarchy, .fitts, .hicks {
+    max-width:300px
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: black;
+    padding: 1em;
+  }
+
+main section {
+    text-align: center;
+}
+
+
+footer{
+    display: grid;
+    padding: 25px 50px;
+    background-color: blue;
+    color:white;
+    text-decoration:wheat;
+    margin-top: 200px;
+    grid-template-rows: auto;
+    align-items: center;
+}
+footer p {
+    text-align: left;
+    color: black;
+    text-emphasis: none;
+    font-size: 1.2em;
+    padding: 0%;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 960px) {
+    div, #banner, .lead-grid, .gallery-grid, .event-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #banner {
+        margin-top: 0;
+    }
+    #banner-msg {
+        margin-top: 0;
+    }
+    #bannner-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
