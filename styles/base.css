@@ -43,11 +43,37 @@ header{
     grid-template-columns: 150px auto;
 }
 
+h2 {
+    display: grid;
+    grid-column: 1 / span 3;
+    height: 80px;
+}
+
+section {
+    grid-template-columns:450px, 450px;
+}
+h3 {
+    display: grid;
+    grid-column: 1 / span 3;
+}
+
+.card {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    max-width: 400px;
+}
+
+main {
+    display: grid;
+}
+
 nav {
     display: grid;
     justify-content: space-around;
     background-color: black;
-    grid-template-rows:150px auto;
+    grid-column: 1 / span 3;
+    top: auto;
+    height: 200px;
 }
 nav a {
     min-width: 120px;
