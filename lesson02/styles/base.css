@@ -88,6 +88,7 @@ section {
     grid-column: 1 / span 1;
     grid-row: auto;
     max-width: 300px;
+    
 }
 
 .card2 {
@@ -103,17 +104,21 @@ section {
 }
 
 .hierarchy, .fitts, .hicks {
-    max-width:300px
+    max-width:300px;
+    max-height: 600px;
+    align-items: center;
 }
 
 p {
     font-family: var(--paragraph-font);
+    text-align: justify;
     color: black;
     padding: 1em;
   }
 
 main section {
-    text-align: center;
+    text-align:center;
+    height: auto;
 }
 
 
@@ -126,9 +131,11 @@ footer{
     margin-top: 200px;
     grid-template-rows: auto;
     align-items: center;
+    height: auto;
 }
 footer p {
     text-align: left;
+    font-weight: bold;
     color: black;
     text-emphasis: none;
     font-size: 1.2em;
@@ -139,13 +146,21 @@ footer p a:hover {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
     div, #banner, .lead-grid, .gallery-grid, .event-grid {
         display: block;
         height: auto;
     }
+    header{
+        display: block;
+    }
+    main{
+        display:inline-block;
+        height: auto;
+    }
     nav, footer {
         flex-direction: column;
+        height: inherit;
     }
     nav a {
         display: block;
@@ -164,11 +179,8 @@ footer p a:hover {
         font-size: 25px;
         color: #6f7364;
     }
-
-    #background {
-        display: none;
-    }
     footer {
         margin-top: 25px;
+        display: inline-block;
     }
 }
