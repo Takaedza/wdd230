@@ -43,6 +43,9 @@ header{
     grid-template-columns: 150px auto;
     height: inherit;
 }
+/*hnjkkllkll;l
+jlkkl;kkl,*/
+;;p;
 
 nav {
     display: grid;
@@ -54,6 +57,7 @@ nav {
 }
 nav a {
     min-width: 120px;
+    font-weight:900;
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -148,7 +152,7 @@ footer p a:hover {
 
 @media screen and (max-width: 600px) {
     div, #banner, .lead-grid, .gallery-grid, .event-grid {
-        display: block;
+        display:flexbox;
         height: auto;
     }
     header{
@@ -163,7 +167,7 @@ footer p a:hover {
         height: inherit;
     }
     nav a {
-        display: block;
+        display: flex;
         padding: 15px;
     }
     #banner {

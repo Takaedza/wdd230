@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none; /* hide hamburger button*/
+    }
+
+    .picture {
+        display: grid;
+        border-radius: 25px 25px 0 0;
+        height: 180px;
+        width: 160px;
+        align-content: left;
+    }
+
+    header h1{
+        text-align: right;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    main{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 1.5rem
+    }
+
+    .main-header{
+        grid-column: 1 / span 2;
+    }
+
+    section h3{
+        margin-top: 1rem
+    }
+}
