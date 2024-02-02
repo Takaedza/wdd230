@@ -11,7 +11,7 @@
     <meta property="og:description" content="This the home page for Takaedza G. Mandinyenya Web Development 1 (WDD230) course assignments">
     <meta property="og:image/png" content="https://github.com/Takaedza/wdd230/tree/main/images/image-231.jpg">
     <meta property="og:url" content="https://takaedza.github.io/wdd230/">
-    <link type="text/css" rel="stylesheet" href="styles/site-plan-zimart.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -20,20 +20,21 @@
         <a id="linklogo" href="index.html">
             <img class="logo" src="images/Logo.PNG" alt="ZimArt Chamber">
         </a>
-        <nav>
+        <nav class="login">
             <a href="login.html">Membership Login</a>
             <a href="signup.html">Signup Membership</a>
         </nav>
     </header>
-    <div id="navigation">
+    <button id="menu"></button>
+    <div class="navigation">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="">Who We Are?</a>
-            <a href="">Projects</a>
-            <a href="">Festivals</a>
-            <a href="">News</a>
-            <a href="">Membership</a>
-            <a href="">About Us</a>
+            <a href="index.html" title="Home">Home</a>
+            <a href="" title="origin">Who We Are?</a>
+            <a href="" title="art">Projects</a>
+            <a href="" title="festive">Festivals</a>
+            <a href="" title="news">News</a>
+            <a href="" title="members">Membership</a>
+            <a href="" title="active">About Us</a>
         </nav>
     </div>    
 </div>
@@ -44,24 +45,27 @@
         </div>
         <section id="action">
             <div class="call-box">
-                <a class="Signup" href="signup.html">Subscribe</a>
+                <a class="signup" href="signup.html">Signup</a>
             </div>
         </section>
     </div>
-    <section class="events">
-        <h2>Painting boot camp with Josh Chaps K</h2>
-        <img src="images/IMG-20220525-WA0091.jpg" alt="Learning art with Josh">
-        <p></p>
-    </section>
-    <section class="weather">
-    </section>
+    <div id="collection">
+        <section class="events">
+            <h2>Painting boot camp with Josh Chaps K</h2>
+            <img src="images/IMG-20220525-WA0091.jpg" alt="Learning art with Josh">
+            <p></p>
+        </section>
+        <section class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n17d8331d03/harare/" data-label_1="HARARE" data-label_2="WEATHER" data-theme="original" >HARARE WEATHER</a>
+        </section>
+    </div>
     <section class="advert">
         <div id="advert1">
-            <img src="" alt="">
+            <img src="images/IMG-20240131-WA0003.jpg" alt="Poetry Red Carpet 2023 Awards">
             <h3></h3>
         </div>
         <div id="advert2">
-            <img src="" alt="">
+            <img src="images/jacarander.jpg" alt="2024 Jacarander Music Festival">
             <h3></h3>
         </div>
     </section>
@@ -69,6 +73,7 @@
 <footer>
     <p>&copy;<span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe</p>
     <p>Last Modified: <span id="lastModified"></span></p>
-</footer>    
+</footer>
+<script src="scripts/getdates.js"></script>    
 </body>
 </html>
