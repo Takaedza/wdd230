@@ -65,6 +65,7 @@ header {
 
 .call-box {
     text-align: center;
+    
 }
 
 .signup{
@@ -120,4 +121,8 @@ header {
 }
 #advert2 img {
     width: 400px;
+}
+
+footer {
+    background-color: slategray;
 }
