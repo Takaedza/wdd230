@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Building</title>
+    <meta name="Author" content="Takaedza Godfrey Mandinyenya">
+    <meta property="og:title" content="Takaedza Godfrey Mandinyenya - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="WDD230 - Web Frontend Development Takaedza Godfrey Mandinyenya html table building">
+    <meta property="og:image/png" content="https://github.com/Takaedza/wdd230/tree/main/images/image-231.jpg">
+    <meta property="og:url" content="https://takaedza.github.io/wdd230/">
+    <script defer src="scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/tablebuild.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<table>
+    <caption>
+        Table 1: Account Feature Comparison
+    </caption>
+    <thead>
+        <tr>
+            <th colspan="4" scope="colgroup">ACME Wildwest Service</th>
+        </tr>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Basic</th>
+            <th scope="col">Premium</th>
+            <th scope="col">Deluxe</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="big1">Feature 1</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr class="highlight">
+            <td>Feature 2</td>
+            <td>❌</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td class="big2">Feature 3</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✔</td>
+        </tr>
+    </tbody>
+</table>
+
+<footer>
+    <p>&copy;<span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+<script src="scripts/getdates.js"></script>

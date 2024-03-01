@@ -68,6 +68,11 @@ header{
     max-height: fit-content;
 }
 
+.hero-img {
+    display: grid;
+    grid-column: 1/ span 3;
+}
+
 h2 {
     display: grid;
     grid-column: 1 / span 3;
