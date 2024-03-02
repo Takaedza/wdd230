@@ -52,7 +52,7 @@ header{
 }
 
 #menu.open ::before {
-    content: "	content: "❎";
+    content: "❎";
 }
 
 .navigation {
@@ -80,7 +80,7 @@ h2 {
 }
 
 section {
-    grid-template-columns:450px, 450px;
+    grid-template-columns:450px 450px;
 }
 h3 {
     display: grid;
