@@ -1,0 +1,102 @@
+:root{
+    --font: rgb(128, 24, 11);
+    --border: 1px solid rgb( 214, 214, 214);
+    --text: #445ba9;
+}
+/*----------- FORM STYLING --------------*/
+.suf fieldset {
+    margin: 2rem 0;
+    border: var(--border);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.suf legend {
+    text-align: left;
+    color: var(--text);
+    padding: 0 .5rem;
+}
+
+.suf label {
+    display: block;
+    text-align: left;
+    padding-top: 1rem;
+    color: var(--font);
+    font-size: .9rem;
+}
+
+.suf div {
+    padding-top: 1rem;
+    color: var(--text);
+    font-size: .9rem;
+}
+
+.suf input[type="text"],
+.suf input[type="password"],
+.suf input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.suf input[type="range"]
+{
+    background-color: #eee;
+    display: block;
+    color: #555;
+    border: solid 0.5px #999;
+    border-radius: 0.3px;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    appearance: none; 
+}
+
+#r {
+	width: 220px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+    text-align: left;
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin-block-start: auto;
+	width: 220px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+.suf input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.suf input:required {
+    border-left: solid 8px blue;
+}
+
+.suf input:required:valid {
+    border-left: solid 8px green;
+}

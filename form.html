@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -37,36 +38,47 @@
         <button id="menu"></button>
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="form.html">Signup</a>
             <a href="lesson03/chamber-site-plan.html">Site Plan</a>
             <a href="chamber/index.html">Chamber</a>
             <a href="https://www.byui.edu">BYU-Idaho</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng&platform=web">Scriptures</a>
         </nav>
-        <h2>WDD230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>
-                    <a>Holy Layout | Js Pen\n</a>
-                    <a href="lesson02/design-principles.html">Media Query | Design Principles Document</a>
-                    <a href="lesson03/images/Screenshot_20240125-225107_1.jpg">combinator exercises|</a>
-                    <a href="https://codepen.io/takaedza-mandinyenya/pen/GReOgyq">Responsive 'Hamburger' Menu Js Pen |</a>
-                    <a href="https://codepen.io/takaedza-mandinyenya/pen/MWxVRaY"> CSS Pseudo-classes Js Pen</a>
-                    <a href="lesson05/bom.html">Book of Mormon Favorite Chapters Application Build</a>
-                    <a href="lesson03/images/landscape.WebP">webp</a>
-                    <a href="lesson08/tablebuild.html">Table Building</a>
-                    <a href="lesson08/Form-start/index.html">Course Form</a>
-            </ul>
-        </section>
-        <section>
-            <h3>Information</h3>
+        <div id="formmessage"></div>
+        <h2>Please fill the form.</h2>
+        <form method="get" action="record.html" class="suf">
+            <fieldset>
+                <legend>Signup Information</legend>
+                <label>Username* <input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="pwd" name="pwd" pattern="[a-zA-Z -]{8,}" placeholder="At least eight characters long. No numbers." required></label>
+                <label>Re-enter Password* <input type="password" id="pwd2" name="pwd2" required></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="Your byui email address" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="A valid byui.edu email address." required></label>
+            </fieldset>
 
-            <div>Page Visits:</div>
-            <div class="page-visits"></div>
-        </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3558.073100811813!2d31.070860112958893!3d-18.028967237798977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1706551082291!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p><a href="https://www.google.com/maps/@-18.0289672,31.0708601,17.09z?entry=ttu"  target="Google-maps"></a></p>
+            <fieldset>
+                <legend>Page Rating</legend>
+                <label>How do rate this page on scale of 0 to 10
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                    <div class="ref">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+                    </div>
+                </label>
+            </fieldset>
+            <input type="submit" value="Signup">
+        </form>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe</p>
