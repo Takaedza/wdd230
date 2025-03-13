@@ -1,0 +1,95 @@
+html {
+    height: auto;
+}
+
+header {
+    background-color: rgb(5, 5, 139);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+    font-size: large;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+nav {
+    background-color: rgb(7, 41, 73);
+    padding: 3px;
+}
+
+nav ul {
+    list-style-type: none;
+    color: antiquewhite;
+    font-size: medium;
+    font-weight: 600;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+}
+
+nav a:hover{
+    background-color: rgba(161, 134, 134, 0.916);
+}
+
+main {
+    align-content: center;
+}
+
+h1 {
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+h2 {
+    background-color:  rgb(5, 5, 139);
+    color: antiquewhite;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+
+}
+section {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    text-decoration: none;
+    border: solid 0.5px  rgb(2, 2, 49);
+    border-radius: 3%;
+    height: auto;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+section .card {
+    padding-bottom: 5%;
+}
+
+section ul {
+    align-content: center;
+}
+
+section ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    background-color: rgb(5, 5, 139);
+    display: block;
+    font-size: large;
+    color: aliceblue;
+    text-align: center;
+}
