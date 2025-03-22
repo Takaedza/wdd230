@@ -17,8 +17,11 @@
         display: none;
     }
     .direction {
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-color: rgb(7,41,73);
+        padding:10px
     }
 
     .direction a {
@@ -29,8 +32,18 @@
         font-weight: bolder;
         padding: 10px;
         text-align: center;
+        color: #faebd7;
+        transition: background-color 0.3s;
     }
 
+    .direction a:hover {
+        background-color: rgb(161, 134,134, 0.916);
+    }
+
+    .direction a:focus {
+        outline: 2px solid rgb(5, 5, 139);
+        outline-offset: 2px;
+    }
 
     main {
         display: grid;
