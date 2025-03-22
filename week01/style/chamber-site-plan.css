@@ -59,16 +59,16 @@ p {
     color: var(--accent1-color);
     padding: 1em;
 }
-.colors {
+#colors {
     width: 100%;
     min-width: 400px;
     margin: 30px auto;
     text-align: center;
 }
-.colors th {
+#colors th {
     background-color: #dddcdc;
 }
-.colors td {
+#colors td {
     width: 25%;
     height: 3em;
 }
@@ -147,10 +147,10 @@ footer p, footer a {
     h1, h2, h3, h4, h5, h6 {
         font-size: 1.5rem; 
     }
-    .colors {
+    #colors {
         min-width: 100%; 
     }
-    .colors td {
+    #colors td {
         width: 100%; 
         height: auto; 
     }
