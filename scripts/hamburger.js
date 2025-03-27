@@ -1,9 +1,26 @@
 const hamButton = document.querySelector("#menu");
-const direction = document.querySelector(".direction");
+const navigation = document.querySelector("#navMenu");
 
-if (hambutton && direction) {
-    hamButton.addEventListener("click", () => {
-        direction.classList.toggle("start");
-        hamButton.classList.toggle("start");
+hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.textContent = navigation.classList.contains("open") ?
+        "❌" : "☰";
+});
+
+//Close hamburger menu a nav link clicked
+document.querySelectorAll(".direction a").forEach(link => {
+    link.addEventListener("click", () => {
+        navigation.classList.remove("open");
+        hamButton.textContent = "☰";
     });
-}
+});
+
+/***************************************
+* if (hamButton && direction) {
+*   hamButton.addEventListener("click", () => {
+*        direction.classList.toggle("open");
+*        hamButton.classList.toggle("open") ?
+*            "❌" : "☰";
+*    });
+* }
+* ********************************/

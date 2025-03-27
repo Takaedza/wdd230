@@ -9,11 +9,12 @@
     <meta property="og:title" content="Takaedza Godfrey Mandinyenya - WDD230 - Web Frontend Development">
     <meta property="og:type" content="article">
     <meta property="og:description" content="This the home page for Takaedza G. Mandinyenya Web Development 1 (WDD230) course assignments">
-    <meta property="og:image" content="https://github.com/Takaedza/wdd230/blob/54de1634aedb06864803f779af30004c10cb9aa8/images/taka.jpg">
+    <meta property="og:image" content="https://github.com/Takaedza/wdd230/blob/e75c16458afab8cd2ea7132b4e4c43da045dbde1/images/taka.jpg">
     <meta property="og:url" content="https://takaedza.github.io/wdd230/">
     
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    
 
     <link rel="icon" href="favicon.ico">
 
@@ -21,16 +22,20 @@
 </head>
 <body>
     <header>
+        <div id="mode">
+            😎
+        </div>
+        <button id="menu" aria-label="Toggle navigation menu">☰</button>
         <img src="images/taka.jpg" alt="Takaedza profile" width="75" height="100">
         <span>Mandinyenya Takaedza Godfrey</span>
     </header>
-    <button id="menu" aria-label="Toggle navigation menu"></button>
-    <nav>
+    
+    <nav id="navMenu">
         <ul class="direction">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#" title="Chamber"></a>Chamber</li>
-            <li><a href="week01/chamber-site-plan.html" title="SitePlan"></a>Site Plan</li>
-            <li><a href="#" title="Form"></a>Form</li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
         </ul>
     </nav>
     <main>
@@ -45,7 +50,7 @@
                 <li>Week 02 <a href="/week02/design.html">Design</a> |
                     <a href="https://codepen.io/Takaedza/pen/azbVryB">CodePen</a> |
                     <a href="/week02/bom.html">Book of Mormon</a></li>
-                <li>week03<a href="/week03/images/landscape.webp">WebP</a></li>
+                <li>week03 <a href="/week03/images/landscape.webp">WebP</a></li>
                 <li><a href="">Week 04</a></li>
                 <li><a href="">Week 05</a></li>
                 <li><a href="">Week 06</a></li>
@@ -70,5 +75,7 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/dark.js"></script>
 </body>
 </html>

@@ -14,33 +14,40 @@ header, main, footer {
 header {
     background-color: rgb(5, 5, 139);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 5px;
+    position: relative;
+
 }
 
 header span {
     font-size: large;
     font-weight: bold;
     color: aliceblue;
-}
-
-nav {
-    max-width: 700px;
-    margin: 1rem auto;
-    padding: 3px;
+    margin-left: 1rem;
 }
 
 #menu {
     font-size: 1.5rem;
     border: none;
     background: none;
-    color: #000000c8;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+    color: aliceblue;
     cursor: pointer;
+    padding: 0.5rem;
 }
+
+nav {
+    background-color: rgb(7, 41, 73);
+    max-width: 200px;
+    margin: 0 auto;
+    display: none;
+}
+
+nav.open {
+    display: block;
+    background-color: rgba(7, 41, 73, 0.9);
+}
+
 
 #menu::before {
     content: "⏏️";
@@ -53,15 +60,12 @@ nav {
 .direction {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     list-style: none;
-    background-color: rgb(7, 41, 73);
-    color: #faebd7;
     padding: 0;
     margin: 0;
 }
 
-direction li {
+.direction li {
     width: 100%;
 }
 
@@ -73,6 +77,9 @@ direction li {
     color: #faebd7;
     font-size: medium;
     font-weight: 800;
+}
+.active {
+    background-color: rgba(0, 0, 139, 0.5);
 }
 
 .direction a:hover {
@@ -92,6 +99,16 @@ main {
     display: grid;
     grid-template-rows: auto;
     grid-gap: 1.5rem;
+    background-color: white;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 h1 {
@@ -120,6 +137,7 @@ h2 {
 
 .card ul {
     align-content: center;
+    color: black;
 }
 
 .card ul li {
