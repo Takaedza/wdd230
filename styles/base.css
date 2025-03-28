@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@1,300&display=swap');
+:root {
+    --heading-font: Ubuntu, Helvetica;
+    --paragraph-font: Helvetica, sans-serif;
+    --primary-color: #05058b;
+    --secondary-color: #072949;
+    --accent-color: #faebd7;
+    --text-light: #f0f8ff;
+    --shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
-	font-family: Roboto, helvetica, sans-serif;
+	font-family: var(--paragraph-font);
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
 }
 
 header, main, footer {
@@ -12,18 +30,23 @@ header, main, footer {
 }
 
 header {
-    background-color: rgb(5, 5, 139);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 1rem;
     position: relative;
+    box-shadow: var(--shadow);
+}
 
+header img {
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
 }
 
 header span {
-    font-size: large;
-    font-weight: bold;
-    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
     margin-left: 1rem;
 }
 
@@ -31,26 +54,31 @@ header span {
     font-size: 1.5rem;
     border: none;
     background: none;
-    color: aliceblue;
+    color: var(--text-light);
     cursor: pointer;
     padding: 0.5rem;
+    transition: var(--transition);
+}
+
+#menu:hover {
+    transform: scale(1.1);
 }
 
 nav {
-    background-color: rgb(7, 41, 73);
+    background-color: var(--secondary-color);
     max-width: 200px;
     margin: 0 auto;
     display: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 nav.open {
     display: block;
-    background-color: rgba(7, 41, 73, 0.9);
+    background-color: rgba(7, 41, 73, 0.95);
 }
 
-
 #menu::before {
-    content: "⏏️";
+    content: "☰";
 }
 
 #menu.start::before {
@@ -61,8 +89,6 @@ nav.open {
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .direction li {
@@ -74,81 +100,115 @@ nav.open {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #faebd7;
-    font-size: medium;
-    font-weight: 800;
+    color: var(--accent-color);
+    font-weight: 600;
+    transition: var(--transition);
 }
 .active {
-    background-color: rgba(0, 0, 139, 0.5);
+    background-color: rgba(0, 0, 139, 0.3);
+    font-weight: 700;
 }
 
 .direction a:hover {
-    background-color: rgba(161, 134, 134, 0.916);
+    background-color: rgba(161, 134, 134, 0.5);
 }
 
 .direction a:focus {
-    outline:2px solid rgb(5, 5, 139);
+    outline:2px solid var(--accent-color);
     outline-offset: 2px;
 }
 
 .active::before{
     content: "🏠";
+    margin-right: 0.5rem;
 }
 
 main {
     display: grid;
     grid-template-rows: auto;
-    grid-gap: 1.5rem;
+    gap: 1.5rem;
     background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 1rem;
 }
 
 #mode {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 3rem;
-    cursor: pointer;
     font-size: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#mode:hover {
+    transform: scale(1.1);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
 }
 
 h1 {
-    font-size: large;
-    font-weight: bold;
-    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 700;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
 }
 
 h2 {
-    background-color:  rgb(5, 5, 139);
-    color: antiquewhite;
-    font-size: large;
-    font-weight: bold;
-    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
     text-align: center;
-}
-.card {
-    border: solid 0.5px  rgb(2, 2, 49);
-    border-radius: 3%;
-    padding: 10px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    margin: -0.6rem -0.6rem 1rem -0.6rem;
 }
 
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0.6px 12px rgba(0, 0, 0, 0.15);
+}
 
 .card ul {
-    align-content: center;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
 .card ul li {
     list-style-type: none;
 }
 
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.card a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 footer {
-    background-color: rgb(5, 5, 139);
-    font-size: large;
-    color: aliceblue;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    color: var(--text-light);
     text-align: center;
-    padding: 10px 0;
-    margin-top: 0.6rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
