@@ -1,0 +1,120 @@
+@media screen and (min-width: 600px) {
+    :root {
+        --max-width: 1200px;
+    }
+
+    header, nav, main, footer {
+        max-width: var(--max-width);
+    }
+    header {
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+    }
+
+    header span {
+        font-size: 1.8rem;
+        margin-left: 1.5rem;
+    }
+
+    nav {
+        display: block !important;
+        max-width: var(--max-width);
+        border-radius: 0;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .direction {
+        flex-direction: row;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .direction a {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    #cta {
+        left: 45%;
+        transform: translateY(350%);
+        padding: 1rem 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 0.6fr;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        padding: 1.5rem 0;
+    }
+
+    #pic {
+        min-width: auto;
+     }
+    
+    .hero img {
+        grid-column: 1 / -1;
+    }
+
+   #stage {
+        grid-column:1 / -1;
+   }
+
+   .top {
+        text-align: center;
+   }
+
+   .onspot {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: center;
+   }
+
+   .card1, .card1 h3 {
+        width: 1fr;
+        grid-column: 1/ span 1;
+   }
+
+    .card2, .card2 h3 {
+        width: 1fr;
+        grid-column: 2/ span 1;
+   }
+
+    .card3, .card3 h3 {
+        width: 1fr;
+        grid-column: 3/ span 1;
+        text-align: center;
+   }
+
+   .card1 h3, .card2 h3, .card3 h3 {
+    font-size: 1rem;
+   }
+
+   .card2 img, .card3 img {
+    width: 50%;
+   }
+
+    footer {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 50%;
+        height: 3px;
+        background-color: var(--accent-color);
+        border-radius: 3px;
+    }
+}
