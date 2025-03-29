@@ -79,17 +79,16 @@
    }
 
    .card1, .card1 h3 {
-        width: 1fr;
         grid-column: 1/ span 1;
+        text-align: center;
    }
 
     .card2, .card2 h3 {
-        width: 1fr;
         grid-column: 2/ span 1;
+        text-align: center;
    }
 
     .card3, .card3 h3 {
-        width: 1fr;
         grid-column: 3/ span 1;
         text-align: center;
    }
