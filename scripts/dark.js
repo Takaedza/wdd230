@@ -10,5 +10,6 @@ modeButton.addEventListener("click", () => {
         main.style.background = "white";
         main.style.color = "#000";
         modeButton.textContent = "😎";
+        modeButton.background = "white";
     }
 });
