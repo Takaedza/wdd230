@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+    background-color: rgb(71, 71, 186);
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 8px 8px;
+}
