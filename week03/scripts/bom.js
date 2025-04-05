@@ -22,3 +22,5 @@ button.addEventListener("click", function() {
         input.value = "";
     }
 });
+
+let chaptersArray = getChapterList() || [];

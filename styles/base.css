@@ -24,6 +24,38 @@ body {
     background-color: #f5f5f5;
 }
 
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(26, 26, 26, 0.1);
+	height: 150px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heroname {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #667cdf);
+	border: 1px solid rgba(0,0,0,.79);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.heroname p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Ubuntu", serif;
+}
+
 header, main, footer {
 	max-width: 599px;
 	margin: 0 auto;
