@@ -240,6 +240,7 @@ p {
 }
 
 .disc img {
+    borde
     width: 100%;
     background: black;
     animation: fade 15s;
