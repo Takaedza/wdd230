@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takaedza Godfrey Mandinyenya - WDD 230 - Web Frontend Development</title>
+        <meta name="description"
+            content="WDD 230 - Web Frontend Development - Takaedza Godfrey Mandinyenya - Course assignment home portal.">
+        <meta name="author" content="Takaedza Godfrey Mandinyenya">
+        <meta property="og:title" content="Takaedza Godfrey Mandinyenya - WDD230 - Web Frontend Development">
+        <meta property="og:type" content="website">
+        <meta property="og:description"
+            content="This the home page for Takaedza G. Mandinyenya Web Development 1 (WDD230) course assignments">
+        <meta property="og:image"
+            content="https://github.com/Takaedza/wdd230/blob/e75c16458afab8cd2ea7132b4e4c43da045dbde1/images/taka.jpg">
+        <meta property="og:url" content="https://takaedza.github.io/wdd230/">
+        <meta property="og:site_name" content="WDD 230 Course Portal Site">
+
+        <link rel="stylesheet" href="styles/tablebuild.css">
+
+
+        <link rel="icon" href="favicon.ico">
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML Tables for Data Presentation</h1>
+        </header>
+
+        <main>
+            <table>
+                <thead>
+                    <tr class="big">
+                        <th colspan="4">ACME Wildwest Service</th>
+                    </tr>
+                    <tr>
+                        <th class="col"></th>
+                        <th class="top">Basic</th>
+                        <th class="top">Premium</th>
+                        <th class="top">Deluxe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="one">Feature 1 </td>
+                        <td class="one"> ✔️ </td>
+                        <td class="one"> ✔️ </td>
+                        <td class="one"> ✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Feature 2 </td>
+                        <td> ❌ </td>
+                        <td> ✔️ </td>
+                        <td> ✔️ </td>
+                    </tr>
+                    <tr>
+                        <td>Feature 3 </td>
+                        <td> ❌ </td>
+                        <td> ❌ </td>
+                        <td> ✔️ </td>
+                    </tr>
+                </tbody>
+            </table>
+            <caption>Table 1: Account Feature Comparison</caption>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/dark.js"></script>
+    </body>
+
+</html>
