@@ -112,8 +112,9 @@ main {
     cursor: pointer;
     position: relative;
     transition: transform 0.3s;
+    width: 94%;
     max-width: 400px;
-    margin: -1 2% 2rem 2%;
+    margin: -1 2% 3rem 2%;
     box-shadow: 1px 1px 4px #999;
 }
 
