@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takaedza Godfrey Mandinyenya - Chitungwiza Chamber of Commerce Home</title>
+        <meta name="description"
+            content="WDD230 - Web Frontend Development Takaedza Godfrey Mandinyenya Chiart Chamber Wbsite Home. This will be for the Chitungwiza art business site integrating prospective investors, clients with various artiist from the town of Chitungwiza. This will include Zengeza, Dema, Seke, Manyame, Nyatsime, Ziko and Seke rural.">
+        <meta name="author" content="Takaedza Godfrey Mandinyenya">
+        <meta property="og:title" content="Takaedza Godfrey Mandinyenya - Chiart Chamber of Commerce Home">
+        <meta property="og:type" content="website">
+        <meta property="og:description"
+            content="WDD 230 - Web Frontend Development Takaedza Godfrey Mandinyenya Chiart Chamber Wbsite Home. This will be for the Chitungwiza art business site integrating prospective investors, clients with various artiist from the town of Chitungwiza. This will include Zengeza, Dema, Seke, Manyame, Nyatsime, Ziko and Seke rural.">
+        <meta property="og:image"
+            content="https://github.com/Takaedza/wdd230/blob/54de1634aedb06864803f779af30004c10cb9aa8/images/taka.jpg">
+        <meta property="og:url" content="https://takaedza.github.io/wdd230/">
+        <meta property="og:site_name" content="ChiArt Chamber of Commerce">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <div id="mode">
+                😎
+            </div>
+            <button id="menu" aria-label="Toggle navigation menu"></button>
+            <img src="images/chiartchamber.webp" alt="Chiart Chamber of Commerce Logo" width="100" height="75">
+            <span>Chitungwiza Art Chamber of Commerce</span>
+            <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook logo" width="50"
+                    height="50"></a>
+            <a href="https://x.com"><img src="images/x.webp" alt="X logo" width="50" height="50"></a>
+            <a href="https://wa.me/263783982158"><img src="images/whatsapp.webp" alt="WhatsApp logo" width="50"
+                    height="50"></a>
+        </header>
+
+        <nav id="navMenu">
+            <ul class="direction">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="x">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            
+            <form method="get" action="thankyou.html" class="join">
+                <h1>Join Us</h1>
+
+                <fieldset>
+
+                    <legend>Fill Your Information</legend>
+                    <label>First Name* <input type="text" name="fname" required id="fname" placeholder="First Name></label>
+                    <label>Last Name* <input type="text" name="lname" required id="lname" placeholder="Last Name></label>
+                    <label for="position">
+                        Position/Title: 
+                        <input type="text" name="position" id="position" pattern="^[A-Za-zÀ-ÿ\s\-']{7,}$"
+                        title="Please enter at least 7 characters consisting of letters, spaces, hyphens, and apostrophes">
+                    </label>
+                    <label for="email">Email* <input type="email" id="email" name="email" required placeholder="user@gmail.com">
+                    </label>
+                    <label>Phone <input type="tel" required name="phone" placeholder="1234554321" id="phone"></label>
+                    <label>Business Name* <input type="text" name="business" required id="business" placeholder="Your Business Name"></label>
+
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Membership Information</legend>
+                    <div>Select Membership Level</div>
+
+                    <div class="membership-option">
+                        <label>
+                            <input type="radio" name="membership" value="nprofit"> Non profit Membership
+                            <h3>Non Profit Benefits</h3>
+                            <p>Is for non profit organizations and there is no fee</p>
+                        </label>
+
+                    </div>
+                    
+                    <div class="membership-option">
+                        <label>
+                            <input type="radio" name="membership" value="bronze"> Bronze Membership
+                            <h3>Bronze Membership Benefits</h3>
+                            <p class="price">$39/year</p>
+                            <ul>
+                                <li>5% Event Discounts</li>
+                                <li>Monthly Newsletter</li>
+                            </ul>
+                        </label>
+                    </div>                   
+
+                    <div class="membership-option">
+                        <label>
+                            <input type="radio" name="membership" value="silver"> Silver Membership
+                            <h3>Silver Membership Benefits</h3>
+                            <p class="price">$59/year</p>
+                            <ul>
+                                <li>15% Event Discounts</li>
+                                <li>Training Sessions</li>
+                                <li>Priority Support</li>
+                            </ul>
+                        </label>
+
+                    </div>
+                    
+                    <div class="membership-option">
+                        <label>
+                            <input type="radio" name="membership" value="gold"> Gold Membership
+                            <h3>Gold Membership Benefits</h3>
+                            <p class="price">$99/year</p>
+                            <ul>
+                                <li>30% Event Discounts</li>
+                                <li>Featured Advertising</li>
+                                <li>VIP Events</li>
+                                <li>Personal Consultant</li>
+                            </ul>
+                        </label>
+                    </div>  
+
+                    <div>Brief Business Description</div>
+                    <label for="description" class="req">
+                        Your Business Description
+                        <textarea id="description" name="description" required></textarea>
+                    </label>
+
+                </fieldset>
+
+                <!-- Hidden timestamp field -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                <!-- Submit button -->
+                <input type="submit" value="Join Now">
+            </form>
+
+            <!-- Benefits Display -->
+            <div class="benefits-column">
+                <h2>Membership Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Bronze Tier</h3>
+                        <div class="price">$39/year</div>
+                        <ul>
+                            <li>✓ Access to member portal</li>
+                            <li>✓ Monthly newsletter</li>
+                            <li>✓ 5% event discounts</li>
+                            <li>✗ Training sessions</li>
+                            <li>✗ Advertising spots</li>
+                        </ul>
+                    </div>
+            
+                    <div class="benefit-card">
+                        <h3>Silver Tier</h3>
+                        <div class="price">$59/year</div>
+                        <ul>
+                            <li>✓ All Basic benefits</li>
+                            <li>✓ Quarterly training sessions</li>
+                            <li>✓ 15% event discounts</li>
+                            <li>✓ Priority support</li>
+                            <li>✗ Featured advertising</li>
+                        </ul>
+                    </div>
+            
+                    <div class="benefit-card">
+                        <h3>Gold Tier</h3>
+                        <div class="price">$99/year</div>
+                        <ul>
+                            <li>✓ All Premium benefits</li>
+                            <li>✓ Featured advertising spots</li>
+                            <li>✓ VIP event access</li>
+                            <li>✓ Personal consultant</li>
+                            <li>✓ 30% event discounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe |WDD230 Chamber Project.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/getDates.js"></script>        
+        <script src="scripts/script.js"></script>
+        <script src="scripts/weather.js"></script>
+    </body>
+
+</html>

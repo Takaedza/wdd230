@@ -63,6 +63,16 @@ nextButton.addEventListener('click', () => {
 // Initial render
 renderCalendar();
 
+ // Set timestamp when the page loads
+  window.addEventListener('load', function() {
+    const now = new Date();
+    // Format as ISO 8601 string (YYYY-MM-DDTHH:mm:ss.sssZ)
+    document.getElementById('timestamp').value = now.toISOString();
+    
+    // Alternative local time format:
+    // document.getElementById('timestamp').value = now.toLocaleString();
+  });
+
 // Visit Message Functionality
 const visitMessageElement = document.getElementById('visitMessage');
 const lastVisit = localStorage.getItem('lastVisit');
