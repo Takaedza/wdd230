@@ -240,7 +240,7 @@ p {
 }
 
 .disc img {
-    borde
+    border: solid 1px var(--secondary-color);
     width: 100%;
     background: black;
     animation: fade 15s;
