@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takaedza Godfrey Mandinyenya - WDD 230 - Web Frontend Development Form</title>
+        <meta name="description"
+            content="WDD 230 - Web Frontend Development - Takaedza Godfrey Mandinyenya - Course assignment form portal.">
+        <meta name="author" content="Takaedza Godfrey Mandinyenya">
+        <meta property="og:title" content="Takaedza Godfrey Mandinyenya - WDD230 - Web Frontend Development Form">
+        <meta property="og:type" content="website">
+        <meta property="og:description"
+            content="This is a user form that will required for Takaedza Godfrey Mandinyenya's WDD 230 course. It includes a username, password, email, and a rating system.">
+        <meta property="og:image"
+            content="https://github.com/Takaedza/wdd230/blob/e75c16458afab8cd2ea7132b4e4c43da045dbde1/images/taka.jpg">
+        <meta property="og:url" content="https://takaedza.github.io/wdd230/">
+        <meta property="og:site_name" content="WDD 230 Form Course Portal Site">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+
+        <link rel="icon" href="favicon.ico">
+
+
+    </head>
+
+    <body>
+        <header>
+            <div id="mode">
+                😎
+            </div>
+            <button id="menu" aria-label="Toggle navigation menu"></button>
+            <img src="images/taka.webp" alt="Takaedza profile" width="75" height="100">
+            <span>Mandinyenya Takaedza Godfrey</span>
+        </header>
+
+        <nav id="navMenu">
+            <ul class="direction">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Signup Form</h1>
+            <form method="get" action="record.html" class="suf1">
+                <fieldset>
+                    <legend>Fill Your Information</legend>
+                    <label>Username* <input type="text" id="username" name="username" required placeholder="Please enter your user name"></label>
+                    <label for="password">Create Your Password* <input type="password" id="password" name="password" required placeholder="Enter your password"></label>
+                    <label for="password2">
+                        Re-enter Your Password* 
+                        <input type="password" id="password2" name="password2" required placeholder="Please re enter your password">
+                        <span class="password-error" id="password-error"></span>
+                    </label>
+                    <label for="email">Email* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="user@byui.edu" title="Only @byui.edu emails are allowed" ></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rate the Page</legend>
+                    <label for="rate">INPUT: range, min, max</label>
+                    <div id="rangevalue">1</div>
+                    <input type="range" id="rate" name="rate" min="1" max="10" value="1" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </fieldset>
+                <input type="submit" value="Signup">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/dark.js"></script>
+        <script src="scripts/form.js"></script>
+    </body>
+
+</html>
