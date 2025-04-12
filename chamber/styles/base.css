@@ -25,6 +25,17 @@
     --shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
     --transition: all 0.3s ease;
+    /*Form colors*/
+    --error: #ff0000;
+    --bord: 2px solid;
+    --backcolor: #fff0f3;
+    --textcolor: #230606;
+    --colortitle: #000b2e;
+    --input-bg: #eee;
+    --input-border: #999;
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #060101;
 }
 
 * {
@@ -76,7 +87,8 @@ header span {
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
     max-width: 400px;
     margin: 0 auto;
     display: none;
@@ -330,10 +342,153 @@ figcaption {
     background-color: #e0e0e0;
 }
 
+/*----------- form --------------*/
+
+.join {
+	margin: 20px;
+	display: block;
+	position: relative;
+}
+
+.join legend {
+     color: var(--colortitle);
+    font-weight: 900;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.join fieldset {
+    background-color: #b3b3ea;
+    margin: 2rem 0;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+.join label {
+     display: block;
+    margin: 1rem 0 0.5rem;
+    color: var(--textcolor);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.suf1 div {
+    padding-top: 1rem;
+    color: var(--colortitle);
+    font-size: .9rem;
+}
+
+.join input[type="text"],
+.join input[type="tel"],
+.join input[type="email"],
+.join input[type="range"]
+{
+    background-color: var(--input-bg);
+    display: block;
+    width: 100%;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.join input:focus {
+    outline: none;
+    border-color: var(--colortitle);
+    box-shadow: 0 0 0 2px rgba(0, 11, 46, 0.1);
+}
+
+.join input[type="radio"]{
+    margin-right: 6px;
+}
+
+
+
+/*----------- VALIDATION STATES --------------*/
+.join input:required {
+    border-left: 4px solid var(--error);
+}
+
+.join input:required:valid {
+    border-left: 4px solid var(--valid-color);
+}
+
+
+/*----------- SUBMIT BUTTON --------------*/
+.join input[type="submit"] {
+    background-color: var(--colortitle);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto;
+}
+
+.join input[type="submit"]:hover {
+    background-color: #001a5e;
+}
+
+/*----------- ANIMATIONS --------------*/
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.benefits-column {
+    flex: 1;
+    min-width: 300px;            background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.membership-option {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+.membership-option input:checked + label {
+    border-color: var(--secondary-color);
+    background-color: #f0f8ff;
+}
+
+.benefits-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.benefit-card {
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.benefit-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 0.5rem 0;
+}
+
 footer {
     background-color: var(--secondary-color);
     font-size: 1rem;
-    color: var(--paragraph-color-on-color);
+    color: var(--accent-color);
     text-align: center;
     padding: 1.3rem;
     margin-top: 1rem;
