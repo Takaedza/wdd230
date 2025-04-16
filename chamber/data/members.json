@@ -1,0 +1,155 @@
+{
+    "companies": [
+        {
+            "company": "1st company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "2nd company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "3rd company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "4th company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "5th company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "6th company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "7th company",
+            "links" : [
+                {
+                    "name" : "CHI-TOWN 🎙POETRY 🎙CONVERGENCE",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "8th company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "9th company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        },
+        {
+            "company": "first company",
+            "links" : [
+                {
+                    "name" : "Chitungwiza Arts Centre",
+                    "address" : "male",
+                    "phoneNumber" : "2007-09-30",
+                    "website" : "https://www.chitungwizaartscentre.com",
+                    "image" : "https://www.chitungwizaartscentre.com/images/logo.png",
+                    "membershipLevel" : "Gold",
+                    "sector" : "POETRY",
+                    "membershipStartDate" : "2023-01-01"
+                }
+            ]
+        }
+        
+    ]
+}
