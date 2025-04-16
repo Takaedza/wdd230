@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takaedza Godfrey Mandinyenya - Chitungwiza Chamber of Commerce Home</title>
+        <meta name="description"
+            content="WDD230 - Web Frontend Development Takaedza Godfrey Mandinyenya Chiart Chamber Wbsite Home. This will be for the Chitungwiza art business site integrating prospective investors, clients with various artiist from the town of Chitungwiza. This will include Zengeza, Dema, Seke, Manyame, Nyatsime, Ziko and Seke rural.">
+        <meta name="author" content="Takaedza Godfrey Mandinyenya">
+        <meta property="og:title" content="Takaedza Godfrey Mandinyenya - Chiart Chamber of Commerce Home">
+        <meta property="og:type" content="website">
+        <meta property="og:description"
+            content="WDD 230 - Web Frontend Development Takaedza Godfrey Mandinyenya Chiart Chamber Wbsite Home. This will be for the Chitungwiza art business site integrating prospective investors, clients with various artiist from the town of Chitungwiza. This will include Zengeza, Dema, Seke, Manyame, Nyatsime, Ziko and Seke rural.">
+        <meta property="og:image"
+            content="https://github.com/Takaedza/wdd230/blob/54de1634aedb06864803f779af30004c10cb9aa8/images/taka.jpg">
+        <meta property="og:url" content="https://takaedza.github.io/wdd230/">
+        <meta property="og:site_name" content="ChiArt Chamber of Commerce">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Rubik|Roboto:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <div id="mode">
+                😎
+            </div>
+            <button id="menu" aria-label="Toggle navigation menu"></button>
+            <img src="images/chiartchamber.webp" alt="Chiart Chamber of Commerce Logo" width="100" height="75">
+            <span>Chitungwiza Art Chamber of Commerce</span>
+            <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook logo" width="50"
+                    height="50"></a>
+            <a href="https://x.com"><img src="images/x.webp" alt="X logo" width="50" height="50"></a>
+            <a href="https://wa.me/263783982158"><img src="images/whatsapp.webp" alt="WhatsApp logo" width="50"
+                    height="50"></a>
+        </header>
+
+        <nav id="navMenu">
+            <ul class="direction">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="x">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="member-container" class="grid-view"></div>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> |Takaedza Godfrey Mandinyenya |Zimbabwe |WDD230 Chamber Project.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/dark.js"></script>
+        <script src="scripts/weather.js"></script>
+    </body>
+
+</html>
