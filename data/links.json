@@ -88,32 +88,6 @@
                     "title":"Weather"
                 }
             ]
-        },
-        {
-            "week": "week 6",
-            "links" : [
-                {
-                    "url":"week01/holygrail.com",
-                    "title":"Holy Grail"
-                },
-                {
-                    "url":"week01/holygrail.com",
-                    "title":"Holy Grail"
-                }
-            ]
-        },
-        {
-            "week": "week 7",
-            "links" : [
-                {
-                    "url":"week01/holygrail.com",
-                    "title":"Holy Grail"
-                },
-                {
-                    "url":"week01/holygrail.com",
-                    "title":"Holy Grail"
-                }
-            ]
         }
         
     ]
