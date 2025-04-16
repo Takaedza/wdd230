@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+h1 {
+  color: navy;
+  border-bottom: 1px solid #eee;
+  text-shadow: 0 0 15px #777;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: navy;
+  margin: 0 0 1rem 0;
+	 border-bottom: 1px solid #bbb;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  color: #333;
+  margin: 7px 0 5px 0;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  margin-left: 2rem;
+  background-color: #f6f6f6;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  border: 1px solid #ccc; /* Border around each card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Inner padding */
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center; /* Center text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section > p {
+  min-height: 60px;
+}
+
+img {
+  width: auto;
+	max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Slightly rounded image corners */
+  box-shadow: 0 0 30px #777;
+  border: 1px solid #333;
+}
+
+li > img {
+  width: auto;
+  height: 30px;
+}
+
+footer {
+  border-top: 1px solid #555;
+  padding: 20px;
+  text-align: center;
+}
+
+

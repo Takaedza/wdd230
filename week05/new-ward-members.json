@@ -1,0 +1,44 @@
+{
+  "familyName" : "Makandanzara",
+  "wardMoved" : "2016-02-22",
+  "familyNumber" : 6,
+  "bishpricVisits" : 5,
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Jason Makandanzara",
+      "gender" : "male",
+      "birthDate" : "1980-01-01"
+    },
+
+    {
+      "name" : "Mavis Makandanzara",
+      "gender" : "female",
+      "birthDate" : "1987-09-10"
+    },
+
+    {
+      "name" : "Jabulain Makandanzara",
+      "gender" : "male",
+      "birthDate" : "2007-09-30"
+    },
+
+    {
+      "name" : "Megan Makandanzara",
+      "gender" : "female",
+      "birthDate" : "2013-10-01"
+    },
+
+    {
+      "name" : "Michelle Makandanzara",
+      "gender" : "female",
+      "birthDate" : "2015-11-21"
+    },
+
+    {
+      "name" : "Last Makandanzara",
+      "gender" : "male",
+      "birthDate" : "2020-12-05"
+    }
+  ]
+}
