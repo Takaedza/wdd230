@@ -57,4 +57,4 @@ function displayMembers(members) {
 }
 
 // Initialize
-getMembersData();
+getMemberData();
