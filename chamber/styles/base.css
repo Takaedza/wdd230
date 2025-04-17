@@ -260,7 +260,7 @@ main {
 }
 
 #dirh1 {
-    grid-column: 1 / -1;
+    display: block;
 }
 
 .menu {
@@ -288,6 +288,10 @@ main {
 	align-items: center;
 }
 
+.grid section h2 {
+    min-width: 200px;
+}
+
 .grid section {
 	text-align: center;
 }
@@ -310,12 +314,6 @@ main {
 	flex-direction: column;
 }
 
-.list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-}
 
 .list section > * {
 	margin: 0 1rem;
@@ -331,7 +329,7 @@ main {
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: var(--input-border);
 }
 
 .disc img {

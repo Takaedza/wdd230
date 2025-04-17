@@ -66,6 +66,25 @@
         padding: 1.5rem 0;
     }
 
+    #dirh1 {
+    grid-column: 1 / -1;
+    }
+
+
+    .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+    }
+
+    .list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+    }
+
     #pic {
         min-width: auto;
      }
