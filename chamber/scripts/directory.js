@@ -58,12 +58,13 @@ function displayCompanies(companies) {
         portrait.setAttribute('src', company.imageurl);
         portrait.setAttribute('alt', `Logo for ${company.name}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '40');
+        portrait.setAttribute('width', '140');
         portrait.setAttribute('height', '140');
 
         // Append the section(infor) with the created elements.        
-        infor.appendChild(portrait);
+    
         infor.appendChild(name);
+         infor.appendChild(portrait);
         infor.appendChild(address);
         infor.appendChild(phoneNumber);
         infor.appendChild(website);
