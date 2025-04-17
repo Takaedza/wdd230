@@ -5,7 +5,7 @@
             "address" : "123 Main Street, Chitungwiza",
             "phoneNumber" : "0773 456 789",
             "website" : "https://www.chitungwizaartscentre.com",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/artCentre.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/artCentre.webp",
             "membershipLevel" : "Gold Membership",
             "sector" : "Arts and Culture",
             "membershipStartDate" : "2023-01-01"
@@ -15,7 +15,7 @@
             "address" : "235 Nhava Street, Chitungwiza",
             "phoneNumber" : "0712 345 678",
             "website" : "https://www.spokenchi.co.zw",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/poetry.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/poetry.webp",
             "membershipLevel" : "Bronze Membership",
             "sector" : "Poetry",
             "membershipStartDate" : "2021-10-12"
@@ -25,7 +25,7 @@
             "address" : "123 Main Street, Chitungwiza",
             "phoneNumber" : "0773 456 789",
             "website" : "https://www.kriticalbeats.com",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/beats.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/beats.webp",
             "membershipLevel" : "Silver Membership",
             "sector" : "Recording Studio",
             "membershipStartDate" : "2019-05-15"
@@ -35,7 +35,7 @@
             "address" : "16 Cork Road, Belgravia, Harare",
             "phoneNumber" : "+263 24 2701 658",
             "website" : "https://www.britishcouncil.co.zw",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/british.png",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/british.png",
             "membershipLevel" : "Non Profit Membership",
             "sector" : "NGO Supporting Arts",
             "membershipStartDate" : "2014-12-12"
@@ -45,7 +45,7 @@
             "address" : "4509 Town Centre, Chitungwiza",
             "phoneNumber" : "0772 459 123",
             "website" : "https://www.creativeworldtheatre.com",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/creative.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/creative.webp",
             "membershipLevel" : "Silver Membership",
             "sector" : "Perfomance Arts",
             "membershipStartDate" : "2022-03-20"            
@@ -55,7 +55,7 @@
             "address" : "235 Nhava Street, Chitungwiza",
             "phoneNumber" : "0712 345 678",
             "website" : "https://www.magpicz.co.zw",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/mag.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/mag.webp",
             "membershipLevel" : "Bronze Membership",
             "sector" : "Photo and Video",
             "membershipStartDate" : "2020-09-27"
@@ -65,7 +65,7 @@
             "address" : "45 Chimunika Drive, Chitungwiza",
             "phoneNumber" : "0723 456 789",
             "website" : "https://www.houseofmusic.co.zw",            
-            "imageurl" : "https://takaedza.github.io/wdd230/images/homd.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/homd.webp",
             "membershipLevel" : "Silver Membership",
             "sector" : "Music Distributor",
             "membershipStartDate" : "2021-11-15"            
@@ -75,7 +75,7 @@
             "address" : "2 Arden Road, Newlands, Harare",
             "phoneNumber" : "0772 236 151",
             "website" : "https://www.netherlandsworldwide.nl/contact/embassies-consulates-general/zimbabwe/embassy-harare",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/neth.jpeg",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/neth.jpeg",
             "membershipLevel" : "Non Profit Membership",
             "sector" : "NGO Supporting Arts",
             "membershipStartDate" : "2017-06-12"
@@ -85,7 +85,7 @@
             "address" : "2 Vatongi, Section 7, Chitungwiza",
             "phoneNumber" : "0772 236 489",
             "website" : "https://www.mbakumbadance.org",
-            "imageurl" : "https://takaedza.github.io/wdd230/images/jusa.webp",
+            "imageurl" : "https://takaedza.github.io/wdd230/chamber/images/jusa.webp",
             "membershipLevel" : "Gold Membership",
             "sector" : "Traditional Dance",
             "membershipStartDate" : "2017-06-12"
