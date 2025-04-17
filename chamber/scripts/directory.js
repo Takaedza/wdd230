@@ -21,6 +21,9 @@ function showList() {
 // It creates a section for each member with their details and an image.
 const url = 'https://takaedza.github.io/wdd230/chamber/data/members.json'; // URL to fetch the data from
 const infors = document.querySelector('#infors');
+const container = document.querySelector('#spotlight-container'); // Assuming you have a div with class 'cards' in your HTML
+
+// Fetch the data from the JSON file and display it
 async function getCompanyData() {
   try {
     const response = await fetch(url);
@@ -79,3 +82,43 @@ function displayCompanies(companies) {
 
 // Initialize
 getCompanyData();
+
+// Call the function to fetch and display on companies on advertising members
+async function getSpotlightCompanies() {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    
+    // Filter Gold/Silver members
+    const eligible = data.companies.filter(company => 
+      company.membershipLevel.includes('Gold') || 
+      company.membershipLevel.includes('Silver')
+    );
+
+    // Randomly select 2-3 members
+    const shuffled = [...eligible].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, Math.random() > 0.5 ? 2 : 3); // Random 2 or 3
+  } catch (error) {
+    console.error('Error loading companies:', error);
+    return [];
+  }
+}
+
+// Display spotlight ads
+function displaySpotlights(companies) {
+  container.innerHTML = companies.map(company => `
+    <div class="spotlight-ad">
+      <img src="${company.imageurl}" alt="${company.name}">
+      <h3>${company.name}</h3>
+      <p>${company.membershipLevel}</p>
+      <p>📞 ${company.phoneNumber}</p>
+      <a href="${company.website}" target="_blank">Website</a>
+    </div>
+  `).join('');
+}
+
+// Initialize on page load
+window.addEventListener('load', async () => {
+  const spotlightCompanies = await getSpotlightCompanies();
+  displaySpotlights(spotlightCompanies);
+});

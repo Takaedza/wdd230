@@ -51,14 +51,18 @@
                     <source srcset="images/mans.webp" media="(max-width: 600px)">
                     <img src="images/hero.webp" alt="Abstract image of women with instruments and sclupting." width="960" height="540">
                 </picture>
-                <img src="images/hero.jpg" alt="">
             </div>
             <div>
                 <h1 id="greet">Welcome to Chitungwiza Arts Chamber of Commerce</h1>
                 <p id="slogan">Where Art Lives!</p>
                 <a href="join-link-here" id="cta">Join Us Today</a>
             </div>
+            <div id="banner" class="banner">
+                <button class="close-btn" onclick="closeBanner()">❌</button>
+                Join us for the Chitungwiza Art Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!
+            </div>
         </section>
+        
         <section id="events">
             <div>
                 <h2>Events Happening</h2>
@@ -73,32 +77,25 @@
         
             </div>
         </section>
+        <section class="welcome">
+            <h2>Daily information</h2>
+            <ul>
+                <li><a href="#" id="visitCount">Page Visit</a></li>
+            </ul>
+
+        </section>
         <section id="weather">
             <h2>Current Weather</h2>
             <div id="weather-info">
-                <p id="location">Location: <span id="city"></span></p>
-                <p id="temperature">Temperature: <span id="temp"> ℃</span></p>
-                <p id="description">Description: <span id="weather-description"></span></p>
+                <div class="weather-container" id="weather"></div>
+                <div class="forecast" id="forecast"></div>
             </div>
+            
         </section>
-        <section id="stage">
-            <div class="top">
-                <h2>On The Spotlight</h2>
-            </div>
-            <div class="onspot">
-                <div class="card1">
-                    <img src="images/artCentre.webp" alt="Chitungwiza Art Centre Logo">
-                    <h3>Chitungwiza Arts Centre</h3>
-                </div>
-                <div class="card2">
-                    <img src="images/poetry.webp" alt="Poetry hosting company logo.">
-                    <h3>🎙CHITOWN 🎙POETRY 🎙CONVERGENCE</h3>
-                </div>
-                <div class="card3">
-                    <img src="images/beats.webp" alt="Kritical Studio Logo">
-                    <h3>Kritical Beats Clappin Studio</h3>
-                </div>
-            </div>
+       
+        <section class="spotlight">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-ads"></div>
         </section>
     </main>
     
@@ -110,5 +107,8 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
+    
 </body>
 </html>
