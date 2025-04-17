@@ -1,4 +1,5 @@
-
+/* Base CSS for the Chamber of Commerce website */
+@import url('https://fonts.googleapis.com/css?family=Rubik|Roboto:wght@500&display=swap');
 
 :root {
     /*color Variables*/

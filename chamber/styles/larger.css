@@ -133,13 +133,14 @@
    .calendar {
     width: 600px;
     align-content: center;
+   }
 
     .container {
         flex-direction: column;
     }
-}
 
-#gallery:hover {box-shadow: 0 0 50px #333;}
+
+    #gallery:hover {box-shadow: 0 0 50px #333;}
 
     footer {
         padding: 2rem;
